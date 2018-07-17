@@ -1,0 +1,258 @@
+/*  Tablets and Ipad's (landscape) */
+@media (min-width: 758px) and (max-width: 1024px) {
+  div.time-container {
+    top: 25%;
+    left: 50%;
+    width: 90%;
+  }
+
+  div.time-container p#time {
+    font-size: 5em;
+  }
+
+  div.time-container p#millisec {
+    font-size: 2em;
+  }
+
+  div.lap-time-container {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+  }
+
+  div.button-container {
+    top: 45%;
+    left: 50%;
+    width: 50%;
+  }
+
+  /** triangle button styles **/
+  div.triangle-button-container {
+    width: 31%;                       /* = height * sqrt(2) */
+    padding-bottom: 21.920310217%;    /* = width / sqrt(2)  */
+  }
+
+  /** button texts **/
+  div.triangle-button-container button span {
+    font-size: .9em;
+  }
+
+  /* lap time style */
+  div.lap-time-container pre {
+    margin-bottom: 3px;
+    padding-left: 20px;
+  }
+
+  /** hover effect **/
+
+  span#start {
+    left: -4%;
+  }
+
+  span#stop {
+    top: 4%;
+  }
+
+  span#reset {
+    top: 4%;
+    left: 12%;
+  }
+
+  /* info */
+  div.information {
+    padding-top: 15px;
+  }
+
+  div.information p {
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 0px 20px;
+  }
+
+  footer {
+    bottom: 3%;
+  }
+
+  footer span.footer {
+    padding: .1em .6em;
+  }
+}
+
+/* Low Resolution Tablets, Mobiles (landscape) */
+@media (min-width: 481px) and (max-width: 757px) {
+  div.time-container {
+    top: 25%;
+    left: 50%;
+    width: 90%;
+  }
+
+  div.time-container p#time {
+    font-size: 5em;
+  }
+
+  div.time-container p#millisec {
+    font-size: 2em;
+  }
+
+  div.lap-time-container {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+  }
+
+  div.button-container {
+    top: 45%;
+    left: 50%;
+    width: 50%;
+  }
+
+  /** triangle button styles **/
+  div.triangle-button-container {
+    width: 31%;                       /* = height * sqrt(2) */
+    padding-bottom: 21.920310217%;    /* = width / sqrt(2)  */
+  }
+
+  /** button texts **/
+  div.triangle-button-container button span {
+    font-size: .9em;
+  }
+
+  /* lap time style */
+  div.lap-time-container pre {
+    margin-bottom: 3px;
+    padding-left: 20px;
+  }
+
+  /** hover effect **/
+
+  span#start {
+    left: -4%;
+  }
+
+  span#stop {
+    top: 4%;
+  }
+
+  span#reset {
+    top: 4%;
+    left: 12%;
+  }
+
+  /* info */
+  div.information {
+    padding-top: 15px;
+  }
+
+  div.information p {
+    font-size: .9em;
+    line-height: 1.4em;
+    padding: 0px 20px;
+  }
+
+  footer {
+    bottom: 3%;
+  }
+
+  footer span.footer {
+    padding: .1em .6em;
+  }
+
+  #fork-me {
+    display: none;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  div.container {
+    min-height: 50%;
+    -webkit-transition: .3s;
+            transition: .3s;
+  }
+
+  div.time-container {
+    top: 20%;
+    left: 50%;
+    width: 90%;
+  }
+
+  div.time-container p#time {
+    font-size: 3.5em;
+  }
+
+  div.time-container p#millisec {
+    font-size: 1.5em;
+  }
+
+  div.lap-time-container {
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 30%;
+  }
+
+  div.button-container {
+    top: 55%;
+    left: 50%;
+    width: 100%;
+    -webkit-transition: .3s;
+            transition: .3s;
+  }
+
+  /** triangle button styles **/
+  div.triangle-button-container {
+    width: 31%;                       /* = height * sqrt(2) */
+    padding-bottom: 21.920310217%;    /* = width / sqrt(2)  */
+  }
+
+  /** button texts **/
+  div.triangle-button-container button span {
+    font-size: .9em;
+  }
+
+  /* lap time style */
+  div.lap-time-container pre {
+    margin-bottom: 3px;
+    padding-left: 20px;
+  }
+
+  /** hover effect **/
+
+  span#start {
+    left: -4%;
+  }
+
+  span#stop {
+    top: 4%;
+  }
+
+  span#reset {
+    top: 4%;
+    left: 12%;
+  }
+
+  /* info */
+  div.information {
+    padding-top: 15px;
+    min-height: 50%;
+  }
+
+  div.information p {
+    font-size: .9em;
+    line-height: 1.4em;
+    padding: 0px 20px;
+  }
+
+  footer {
+    bottom: 3%;
+  }
+
+  #fork-me {
+    display: none;
+  }
+}

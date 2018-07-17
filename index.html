@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Chronometer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/chrono.css">
+  <link rel="stylesheet" href="/css/info.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <script type="text/javascript" src="/scripts/chronometer.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <a id="fork-me" href="https://github.com/mlhtnc">
+      <img style="position: absolute; top: 0; left: 0; border: 0;"
+      src="images/forkme_left_darkblue_121621.png" alt="Fork me on GitHub">
+    </a>
+
+    <div class="time-container">
+      <p id="time">00:00:00</p>
+      <p id="millisec">000</p>
+    </div>
+    <div id="lap" class="lap-time-container"></div>
+    <div class="button-container">
+      <div class="triangle-button-container noSelect">
+        <button id="button-start-stop" type="button">
+          <span id="start">Start</span>
+          <span id="stop">Stop</span>
+        </button>
+      </div>
+      <div class="triangle-button-container noSelect">
+        <button id="button-lap" type="button">
+          <span id="lap">Lap</span>
+        </button>
+      </div>
+      <div class="triangle-button-container noSelect">
+        <button id="button-reset" type="button">
+          <span id="reset">Reset</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="information">
+    <p>
+      Hello, this is a chronometer. I am new to <span>HTML</span>,
+      <span>CSS</span> and <span>JS</span>.
+    </p>
+    <p>So it is as simple as possible. You are free to <a href="https://github.com/mlhtnc">
+      fork</a> and contribute my projects.</p>
+    <p>
+      <span>Space</span> Start/Stop, <span>L</span> Record Lap, <span>R</span> Reset.
+    </p>
+    <footer>No Brain Exception - 2018</footer>
+  </div>
+</body>
+</html>

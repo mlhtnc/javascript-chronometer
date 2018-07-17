@@ -1,0 +1,180 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #77bdc6;
+  background: radial-gradient(circle, #77bdc6, black 300%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/** containers **/
+div.container {
+  position: relative;
+  min-height: 60%;
+
+  /* disable text selection */
+  -moz-user-select: none;
+  user-select: none;
+}
+
+div.time-container {
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: auto;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+div.lap-time-container {
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+}
+
+div.button-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+}
+
+div.time-container p#time {
+  display: inline;
+  text-align: center;
+  font-size: 8em;
+}
+
+div.time-container p#millisec {
+  display: inline;
+  text-align: center;
+  font-size: 3em;
+}
+
+/** triangle button styles **/
+div.triangle-button-container {
+  width: 30%;                       /* = height * sqrt(2) */
+  padding-bottom: 21.213203436%;    /* = width / sqrt(2)  */
+  margin-right: 1%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+div.triangle-button-container button {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: #101416;
+  color: powderblue;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+  -webkit-transition: color .3s;
+          transition: color .3s;
+
+  box-shadow: -5px -5px 10px 0px gray;
+
+  /* Override defaut button styles */
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/** hover effect **/
+div.triangle-button-container button:hover {
+  background-color: #eb7a13;
+  color: black;
+}
+
+/** button pressed **/
+div.triangle-button-container button:active {
+  background-color: #eb7a13;
+  color: black;
+  box-shadow: -5px -5px 10px 0px gray inset;
+}
+
+/** remove dotted border when focused **/
+div.triangle-button-container button::-moz-focus-inner {
+  border: none;
+}
+
+div.triangle-button-container button:focus {
+  border: none;
+}
+
+/* lap time style */
+div.lap-time-container pre{
+  font-size: 1.1em;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: #a5cedd;
+  border-radius: 10px;
+  padding: 2px;
+  padding-left: 10px;
+
+  /* enable text selection */
+  -moz-user-select: text;
+  user-select: text;
+}
+
+/** button texts **/
+div.triangle-button-container button span {
+  position: absolute;
+  font-size: 1.3em;
+}
+
+span#start {
+  top: 35%;
+  left: -7%;
+
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+span#lap {
+  top: 15%;
+  left: 9%;
+
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+span#stop {
+  top: 0;
+  left: 20%;
+}
+
+span#reset {
+  top: 0;
+  left: 10%;
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,55 @@
+div.information {
+  position: relative;
+  background-color: black;
+  color: white;
+  text-align: center;
+  min-height: 40%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+div.information p {
+  font-size: 1.3em;
+}
+
+div.information p span {
+  background-color: #c79b00;
+  border-radius: 5px;
+  padding: .17em;
+  color: #000000;
+}
+
+div.information p::-moz-selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+div.information p::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+div.information p span::-moz-selection {
+  background-color: black;
+  color: #ff3d00;
+}
+
+div.information p span::selection {
+  background-color: black;
+  color: #ff3d00;
+}
+
+div.information p a:link,
+div.information p a:visited,
+div.information p a:hover,
+div.information p a:active {
+  color: #c79b00;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+}

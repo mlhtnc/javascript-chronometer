@@ -85,9 +85,9 @@ function resetTime() {
 function recordLapTime() {
   if(isStarted == false)
     return;
-
-  var timeArr = getTimeAsString(getDeltaTime());
+      
   elapsedTime += getDeltaTime();
+  var timeArr = getTimeAsString(elapsedTime);
   sTime = new Date().getTime();
 
   // I did a little hack here. after lap#999

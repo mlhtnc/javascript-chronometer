@@ -42,7 +42,7 @@ window.addEventListener("load", function() {
 var isStarted = false;
 var isReset = true;
 
-var startTime;
+var sTime;
 var elapsedTime = 0;
 var lapCount = 0;
 
